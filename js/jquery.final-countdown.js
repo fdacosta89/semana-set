@@ -31,10 +31,10 @@
         if ( ! element.is(':visible') ) {
             return;
         }
-        var start = new Date(2015,11,1,0,0,0,0).getTime() / 1000;
-        var end = new Date(2016,1,3,0,0,0,0).getTime() / 1000;
-        var now = new Date(2015,11,5,0,0,0,0).getTime() / 1000;
-        console.log(start + '|' + end + '|' + now);
+        var start = new Date("11/1/2015 00:00:00").getTime() / 1000;
+        var end = new Date("3/1/2015 09:00:00").getTime() / 1000;
+        var now = new Date().getTime() / 1000;
+//        console.log(start + '|' + end + '|' + now);
         var defaults = $.extend({
             start: start,
             end: end,
