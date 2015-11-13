@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/*
+ * Bootstrap Image Gallery Demo CSS 3.0.0
+ * https://github.com/blueimp/Bootstrap-Image-Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.countdown-container {/*
+	position: relative;
+	top: 30%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);*/
+
+}
+
+.clock {
+    margin-top: 80px;
+}
+.clock-item .inner {
+	height: 0px;
+	padding-bottom: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.clock-canvas {
+	background-color:rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	height: 0px;
+	padding-bottom: 100%;
+}
+
+.text {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: -50px;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+}
+
+.text .val {
+	font-size: 50px;
+}
+
+.text .type-time {
+	font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.clock-item {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.clock-item {
+		margin: 0px 30px 30px 30px;
+	}
+}
+
+.hidden_transport_info {
+	display: none;
+}
+
+.hidden_transport_info p {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 18px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+	margin-top: 20px;
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.first-form
+{
+	padding-bottom: 30px;
+	margin-top: 15px;
+}
+
+.form-error-message
+{
+	color: red;
+	font-style: italic;
+	display: none;
+}
+
+.submit-button
+{
+	margin: 15px auto 0;
+	max-width: 150px;
+}
+
+ .equipa-info {
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 15px;
+ }
+
+ .equipa-info > .text {
+ 	color: white;
+ 	font-size: 20px;
+ 	text-align: center;
+    position: relative;
+    bottom: 5px;
+}

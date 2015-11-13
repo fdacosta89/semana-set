@@ -1,0 +1,3 @@
+//MUDAR A VARIÁVEL AQUI PARA ACTIVAR/DESACTIVAR A MANUTENÇÃO
+
+var maintenance = true;

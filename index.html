@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title>SET - Semana Empreserial e Tecnológica 2016</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <link href="css/demo.css" rel="stylesheet">
+
+
+    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="js/maintenance.js"></script>
+    <script>
+      if (maintenance) {
+        window.location.replace('manutencao/');
+      }
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav id="menu-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <a target="_blank" class="navbar-brand navbar-logo-ist"href="http://tecnico.ulisboa.pt">
+            <img height="100%" src="images/logo_ist.png"></img>
+        </a>
+        <a class="navbar-brand page-scroll" href="#page-top">
+            <img id="logo-set" src="images/logoback2.png"></img>
+        </a>
+        <div class="container right-container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#galeria">Galeria</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contactos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="team/">Equipa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section background1-section">
+        <div class="countdown countdown-container container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- -->
+                    <h1>Bem-vindos à SET 2016</h1>
+                </div>
+            </div>
+            <div class="row" style="height:60px"></div>
+            <div class="clock row">
+              <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                  <div class="wrap">
+                      <div class="inner">
+                          <div id="canvas-days" class="clock-canvas"></div>
+
+                          <div class="text">
+                              <p class="val">0</p>
+                              <p class="type-days type-time">DAYS</p>
+                          </div><!-- /.text -->
+                      </div><!-- /.inner -->
+                  </div><!-- /.wrap -->
+              </div><!-- /.clock-item -->
+
+              <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                  <div class="wrap">
+                      <div class="inner">
+                          <div id="canvas-hours" class="clock-canvas"></div>
+
+                          <div class="text">
+                              <p class="val">0</p>
+                              <p class="type-hours type-time">HOURS</p>
+                          </div><!-- /.text -->
+                      </div><!-- /.inner -->
+                  </div><!-- /.wrap -->
+              </div><!-- /.clock-item -->
+
+              <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                  <div class="wrap">
+                      <div class="inner">
+                          <div id="canvas-minutes" class="clock-canvas"></div>
+
+                          <div class="text">
+                              <p class="val">0</p>
+                              <p class="type-minutes type-time">MINUTES</p>
+                          </div><!-- /.text -->
+                      </div><!-- /.inner -->
+                  </div><!-- /.wrap -->
+              </div><!-- /.clock-item -->
+
+              <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                  <div class="wrap">
+                      <div class="inner">
+                          <div id="canvas-seconds" class="clock-canvas"></div>
+
+                          <div class="text">
+                              <p class="val">0</p>
+                              <p class="type-seconds type-time">SECONDS</p>
+                          </div><!-- /.text -->
+                      </div><!-- /.inner -->
+                  </div><!-- /.wrap -->
+              </div><!-- /.clock-item -->
+            </div><!-- /.clock -->
+            <div class="row" style="height:30px"></div>
+            <div class="row">
+
+            </div>
+            <div class="row" style="height:30px"></div>
+        </div><!-- /.countdown-wrapper -->
+
+
+        <!-- Form Empresas -->
+        <div class="first-form container">
+            <div><h1>Deixe-nos o contacto da sua empresa</h1></div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="name"><h2>Empresa:</h2></label>
+                        <input type="text" class="form-control" id="form-name">
+                    </div>
+                    <div class="form-error-message" id="form-name-error"></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="name"><h2>Email:</h2></label>
+                        <input type="text" class="form-control" id="form-email">
+                    </div>
+                    <div class="form-error-message" id="form-email-error"></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="name"><h2>Telefone:</h2></label>
+                        <input type="text" class="form-control" id="form-contact">
+                    </div>
+                    <div class="form-error-message" id="form-contact-error"></div>
+                </div><!--
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <label for="name"><h2>Área de interesse:</h2></label>
+                        <select class="form-control" id="form-area">
+                            <option value="">-- Área --</option>
+                            <option value="placeholder1">1</option>
+                            <option value="placeholder2">2</option>
+                        </select>
+                    </div>
+                    <div class="form-error-message" id="form-area-error"></div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="submit-button">
+                    <button type="button" class="btn btn-phantom" onclick="formEmpresasSubmit()">Submeter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="simple-spacer">
+    </div>
+
+    <!-- About Section -->
+    <section id="galeria" class="about-section background2-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Galeria</h1>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <h3>Edição 2015</h3>
+                <div id="gallery" style="display:none;">
+                <img src="images/thumbs/tile1.jpg"
+                     data-image="images/big/tile1.jpg">
+                <img src="images/thumbs/tile2.jpg"
+                     data-image="images/big/tile2.jpg">
+                <img src="images/thumbs/tile3.jpg"
+                     data-image="images/big/tile3.jpg">
+                <img src="images/thumbs/tile4.jpg"
+                     data-image="images/big/tile4.jpg">
+                <img src="images/thumbs/tile5.jpg"
+                     data-image="images/big/tile5.jpg">
+                <img src="images/thumbs/tile6.jpg"
+                     data-image="images/big/tile6.jpg">
+                <img src="images/thumbs/tile7.jpg"
+                     data-image="images/big/tile7.jpg">
+                <img src="images/thumbs/tile8.jpg"
+                     data-image="images/big/tile8.jpg">
+                <img src="images/thumbs/tile9.jpg"
+                     data-image="images/big/tile9.jpg">
+                <img src="images/thumbs/tile10.jpg"
+                     data-image="images/big/tile10.jpg">
+                <img src="images/thumbs/tile11.jpg"
+                     data-image="images/big/tile11.jpg">
+                <img src="images/thumbs/tile12.jpg"
+                     data-image="images/big/tile12.jpg">
+                <img src="images/thumbs/tile13.jpg"
+                     data-image="images/big/tile13.jpg">
+                <img src="images/thumbs/tile14.jpg"
+                     data-image="images/big/tile14.jpg">
+                <img src="images/thumbs/tile15.jpg"
+                     data-image="images/big/tile15.jpg">
+                <img src="images/thumbs/tile16.jpg"
+                     data-image="images/big/tile16.jpg">
+                <img src="images/thumbs/tile17.jpg"
+                     data-image="images/big/tile17.jpg">
+                <img src="images/thumbs/tile18.jpg"
+                     data-image="images/big/tile18.jpg">
+                <img src="images/thumbs/tile19.jpg"
+                     data-image="images/big/tile19.jpg">
+                <img src="images/thumbs/tile20.jpg"
+                     data-image="images/big/tile20.jpg">
+                <img src="images/thumbs/tile21.jpg"
+                     data-image="images/big/tile21.jpg">
+                <img src="images/thumbs/tile22.jpg"
+                     data-image="images/big/tile22.jpg">
+                <img src="images/thumbs/tile23.jpg"
+                     data-image="images/big/tile23.jpg">
+                <img src="images/thumbs/tile24.jpg"
+                     data-image="images/big/tile24.jpg">
+                <img src="images/thumbs/tile25.jpg"
+                     data-image="images/big/tile25.jpg">
+                <img src="images/thumbs/tile26.jpg"
+                     data-image="images/big/tile26.jpg">
+                <img src="images/thumbs/tile27.jpg"
+                     data-image="images/big/tile27.jpg">
+                <img src="images/thumbs/tile28.jpg"
+                     data-image="images/big/tile28.jpg">
+                <img src="images/thumbs/tile29.jpg"
+                     data-image="images/big/tile29.jpg">
+                <img src="images/thumbs/tile30.jpg"
+                     data-image="images/big/tile30.jpg">
+                <img src="images/thumbs/tile31.jpg"
+                     data-image="images/big/tile31.jpg">
+                <img src="images/thumbs/tile32.jpg"
+                     data-image="images/big/tile32.jpg">
+                <img src="images/thumbs/tile33.jpg"
+                     data-image="images/big/tile33.jpg">
+                <img src="images/thumbs/tile34.jpg"
+                     data-image="images/big/tile34.jpg">
+                <img src="images/thumbs/tile35.jpg"
+                     data-image="images/big/tile35.jpg">
+                <img src="images/thumbs/tile36.jpg"
+                     data-image="images/big/tile36.jpg">
+                <img src="images/thumbs/tile37.jpg"
+                     data-image="images/big/tile37.jpg">
+                <img src="images/thumbs/tile38.jpg"
+                     data-image="images/big/tile38.jpg">
+                <img src="images/thumbs/tile39.jpg"
+                     data-image="images/big/tile39.jpg">
+                <img src="images/thumbs/tile40.jpg"
+                     data-image="images/big/tile40.jpg">
+                <img src="images/thumbs/tile41.jpg"
+                     data-image="images/big/tile41.jpg">
+                <img src="images/thumbs/tile42.jpg"
+                     data-image="images/big/tile42.jpg">
+                <img src="images/thumbs/tile43.jpg"
+                     data-image="images/big/tile43.jpg">
+                <img src="images/thumbs/tile44.jpg"
+                     data-image="images/big/tile44.jpg">
+                <img src="images/thumbs/tile45.jpg"
+                     data-image="images/big/tile45.jpg">
+                <img src="images/thumbs/tile46.jpg"
+                     data-image="images/big/tile46.jpg">
+                <img src="images/thumbs/tile47.jpg"
+                     data-image="images/big/tile47.jpg">
+                <img src="images/thumbs/tile48.jpg"
+                     data-image="images/big/tile48.jpg">
+                <img src="images/thumbs/tile49.jpg"
+                     data-image="images/big/tile49.jpg">
+                <img src="images/thumbs/tile50.jpg"
+                     data-image="images/big/tile50.jpg">
+                <img src="images/thumbs/tile51.jpg"
+                     data-image="images/big/tile51.jpg">
+                <img src="images/thumbs/tile52.jpg"
+                     data-image="images/big/tile52.jpg">
+                <img src="images/thumbs/tile53.jpg"
+                     data-image="images/big/tile53.jpg">
+                <img src="images/thumbs/tile54.jpg"
+                     data-image="images/big/tile54.jpg">
+                <img src="images/thumbs/tile55.jpg"
+                     data-image="images/big/tile55.jpg">
+                <img src="images/thumbs/tile56.jpg"
+                     data-image="images/big/tile56.jpg">
+                <img src="images/thumbs/tile57.jpg"
+                     data-image="images/big/tile57.jpg">
+                <img src="images/thumbs/tile58.jpg"
+                     data-image="images/big/tile58.jpg">
+                <img src="images/thumbs/tile59.jpg"
+                     data-image="images/big/tile59.jpg">
+                <img src="images/thumbs/tile60.jpg"
+                     data-image="images/big/tile60.jpg">
+                <img src="images/thumbs/tile61.jpg"
+                     data-image="images/big/tile61.jpg">
+                <img src="images/thumbs/tile62.jpg"
+                     data-image="images/big/tile62.jpg">
+                <img src="images/thumbs/tile63.jpg"
+                     data-image="images/big/tile63.jpg">
+                <img src="images/thumbs/tile64.jpg"
+                     data-image="images/big/tile64.jpg">
+                <img src="images/thumbs/tile65.jpg"
+                     data-image="images/big/tile65.jpg">
+                <img src="images/thumbs/tile66.jpg"
+                     data-image="images/big/tile66.jpg">
+                <img src="images/thumbs/tile67.jpg"
+                     data-image="images/big/tile67.jpg">
+                <img src="images/thumbs/tile68.jpg"
+                     data-image="images/big/tile68.jpg">
+                <img src="images/thumbs/tile69.jpg"
+                     data-image="images/big/tile69.jpg">
+                <img src="images/thumbs/tile70.jpg"
+                     data-image="images/big/tile70.jpg">
+                <img src="images/thumbs/tile71.jpg"
+                     data-image="images/big/tile71.jpg">
+                <img src="images/thumbs/tile72.jpg"
+                     data-image="images/big/tile72.jpg">
+                <img src="images/thumbs/tile73.jpg"
+                     data-image="images/big/tile73.jpg">
+                <img src="images/thumbs/tile74.jpg"
+                     data-image="images/big/tile74.jpg">
+                <img src="images/thumbs/tile75.jpg"
+                     data-image="images/big/tile75.jpg">
+                <img src="images/thumbs/tile76.jpg"
+                     data-image="images/big/tile76.jpg">
+                <img src="images/thumbs/tile77.jpg"
+                     data-image="images/big/tile77.jpg">
+                <img src="images/thumbs/tile78.jpg"
+                     data-image="images/big/tile78.jpg">
+                <img src="images/thumbs/tile79.jpg"
+                     data-image="images/big/tile79.jpg">
+                <img src="images/thumbs/tile80.jpg"
+                     data-image="images/big/tile80.jpg">
+                <img src="images/thumbs/tile81.jpg"
+                     data-image="images/big/tile81.jpg">
+                <img src="images/thumbs/tile82.jpg"
+                     data-image="images/big/tile82.jpg">
+                <img src="images/thumbs/tile83.jpg"
+                     data-image="images/big/tile83.jpg">
+                <img src="images/thumbs/tile84.jpg"
+                     data-image="images/big/tile84.jpg">
+                <img src="images/thumbs/tile85.jpg"
+                     data-image="images/big/tile85.jpg">
+                <img src="images/thumbs/tile86.jpg"
+                     data-image="images/big/tile86.jpg">
+                <img src="images/thumbs/tile87.jpg"
+                     data-image="images/big/tile87.jpg">
+                <img src="images/thumbs/tile88.jpg"
+                     data-image="images/big/tile88.jpg">
+                <img src="images/thumbs/tile89.jpg"
+                     data-image="images/big/tile89.jpg">
+                <img src="images/thumbs/tile90.jpg"
+                     data-image="images/big/tile90.jpg">
+                <img src="images/thumbs/tile91.jpg"
+                     data-image="images/big/tile91.jpg">
+                <img src="images/thumbs/tile92.jpg"
+                     data-image="images/big/tile92.jpg">
+                <img src="images/thumbs/tile93.jpg"
+                     data-image="images/big/tile93.jpg">
+                <img src="images/thumbs/tile94.jpg"
+                     data-image="images/big/tile94.jpg">
+                <img src="images/thumbs/tile95.jpg"
+                     data-image="images/big/tile95.jpg">
+                <img src="images/thumbs/tile96.jpg"
+                     data-image="images/big/tile96.jpg">
+                <img src="images/thumbs/tile97.jpg"
+                     data-image="images/big/tile97.jpg">
+                </div>
+
+              </div>
+            </div>
+            <div class="row" style="height: 30px"></div>
+        </div>
+    </section>
+
+    <div class="simple-spacer">
+    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section background1-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contactos</h1>
+                </div>
+            </div>
+            <div style="margin-top: 30px" class="row">
+              <!--<iframe
+                width="100%"
+                height="550"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA54_OIfzPx1VIEge38oH18Phl-wbRucQE&q=Instituto+Superior+Técnico+-+Taguspark"
+                allowfullscreen>
+              </iframe>-->
+              <div id="map"></div>
+            </div>
+            <div style="height:30px" class="row"></div>
+            <div class="row">
+              <div class="col-md-3 col-sm-3">
+                <div id="car-option" class="btn btn-phantom" onclick="fade('car-option_text', 'transportation-option-info')">
+                  <i class="fa fa-car"></i>
+                  Carro
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3" onclick="fade('taxi-option_text', 'transportation-option-info')">
+                <div id="taxi-option" class="btn btn-phantom">
+                  <i class="fa fa-taxi"></i>
+                  Taxi
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3" onclick="fade('bus-option_text', 'transportation-option-info')">
+                <div id="bus-option" class="btn btn-phantom">
+                  <i class="fa fa-bus"></i>
+                  Autocarro
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3" onclick="fade('train-option_text', 'transportation-option-info')">
+                <div id="train-option" class="btn btn-phantom">
+                  <i class="fa fa-train"></i>
+                  Comboio
+                </div>
+              </div>
+            </div>
+            <div class="row">
+            <div id="transportation-option-info">
+              <div class="hidden_transport_info" id="train-option_text">
+                <p>Há ligações ao campus a partir das linhas ferroviárias Lisboa-Sintra e Lisboa-Cascais. A empresa que tem a concessão do transporte público rodoviário para esta zona é a <a href="http://www.vimeca.pt/" target="blank">Vimeca Transportes.</a></p>
+              </div>
+              <div class="hidden_transport_info" id="bus-option_text">
+                <p>
+                  A empresa de transporte rodoviário <a href="http://www.vimeca.pt/" target="blank">Vimeca</a> efectua algumas carreiras que servem o campus do Taguspark. Para informação actualizada e detalhada sobre os percursos e horários visite, por favor, o web site da Vimeca.
+                </p>
+                <p>
+                  Para alunos e funcionários do Técnico Lisboa, é ainda disponibilizado um serviço <a href="http://tecnico.ulisboa.pt/pt/sobre-IST/localizacao/#shuttle" target="blank"><i>Shuttle IST</i></a>, que faz os acessos ao <i>campus Taguspark</i> de forma gratuita, no período das 07:00 às 20:10.
+                </p>
+              </div>
+              <div class="hidden_transport_info" id="taxi-option_text">
+                            <p>Os táxis permitem chegar ao Taguspark a partir de qualquer ponto da cidade, mas os custos também aumentam de acordo com a distância, trânsito e hora. Uma viagem do centro de Lisboa até ao Taguspark tem uma duração de cerca de 30 minutos.</p>
+                        </div>
+              <div class="hidden_transport_info" id="car-option_text">
+                <p class="sub-option">
+                  Pela A5 - Auto-estrada Lisboa-Cascais: saída em Cacém/Porto Salvo. A via rápida (Porto Salvo) entre a A5 e o Cacém permite um acesso mais directo ao campus.
+                  </br>
+                  Pelo IC 19 - saída no Cacém, em direcção a Paço d'Arcos, e ligação ao Campus do IST.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="height:300px"></div>
+              <script type="text/javascript">
+
+                var map;
+                function initMap() {
+                  map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 38.736, lng: -9.303},
+                    zoom: 16
+                  });
+                }
+              </script>
+              <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=################################&callback=initMap">
+              </script>
+        </div>
+    </section>
+
+    <div class="simple-spacer">
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <!-- <script src="js/background.js"></script> -->
+
+
+    <script type="text/javascript" src="js/kinetic.js"></script>
+    <script type="text/javascript" src="js/jquery.final-countdown.js"></script>
+    <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+
+    <script type='text/javascript' src='unitegallery/themes/default/ug-theme-default.js'></script>
+    <script type="text/javascript" src="js/fading.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+
+
+    <script type="text/javascript">
+    	$('.countdown').final_countdown();
+    </script>
+
+
+    <script type="text/javascript">
+
+      jQuery(document).ready(function(){
+
+        jQuery("#gallery").unitegallery({
+            theme_enable_fullscreen_button: true,
+            gallery_width: 1300,
+            gallery_height: 800,
+            gallery_min_height: 300,
+            gallery_min_width: 400,
+
+            gallery_autoplay: true,
+            gallery_play_interval: 5000,
+            gallery_pause_on_mouseover: true,
+
+            gallery_preserve_ratio: true,
+            slider_control_zoom:false,
+            slider_enable_fullscreen_button: true,
+            slider_enable_zoom_panel: false,
+            slider_fullscreen_button_align_hor:"center",
+        });
+
+      });
+
+    </script>
+  </body>
+
+</html>
